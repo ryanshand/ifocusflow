@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 860">
+  <rect x="14" y="14" width="392" height="832" rx="52" fill="#0f1015" stroke="#2a2f3a" stroke-width="2"/>
+  <rect x="34" y="110" width="352" height="640" rx="26" fill="#111318" stroke="#22252e"/>
+  <rect x="170" y="52" width="80" height="12" rx="6" fill="#2a2f3a"/>
+  <circle cx="210" cy="780" r="18" fill="#0b0c10" stroke="#2a2f3a"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#a9acb2"
+        font-family="Inter,system-ui" font-size="18">iPhone Screenshot<br/>Drop image here</text>
+</svg>

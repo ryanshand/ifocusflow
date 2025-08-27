@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iFocusFlow — Focus, Track, Level Up</title>
+  <meta name="description" content="iFocusFlow is a focus and habits app for iPhone and iPad. Track deep work sessions, micro‑tasks, and level up your focus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="iFocusFlow home">
+        <img src="assets/img/favicon.svg" alt="" class="brand-mark">
+        <span class="brand-text">iFocusFlow</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Focus better. <span class="accent">Every day.</span></h1>
+          <p>Set a timer, tick off micro‑tasks, and watch your focus level rise. iFocusFlow brings a light, fast, and motivating workflow to iPhone &amp; iPad.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#" aria-label="Download on the App Store (coming soon)">App Store</a>
+            <a class="btn ghost" href="#screens">See the app</a>
+          </div>
+          <p class="domain-note">Official site: <strong>iFocusFlow.cc</strong></p>
+        </div>
+        <div class="hero-art">
+          <!-- Replace this image later; it's a clean placeholder -->
+          <img src="assets/img/hero-placeholder.svg" alt="iFocusFlow hero artwork placeholder">
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-media">
+            <img src="assets/img/iphone-mock.svg" alt="iPhone mockup placeholder">
+          </div>
+          <div class="feature-copy">
+            <h2>Deep work sessions</h2>
+            <p>Start a focused session with optional micro‑tasks to keep momentum. Live Activities and widgets keep you on track without opening the app.</p>
+          </div>
+        </div>
+        <div class="feature reverse">
+          <div class="feature-media">
+            <img src="assets/img/ipad-mock.svg" alt="iPad mockup placeholder">
+          </div>
+          <div class="feature-copy">
+            <h2>Designed for iPad too</h2>
+            <p>Enjoy a spacious layout on iPad with multitasking support. Perfect for planning, reviewing habits, and organizing longer focus blocks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screens / gallery -->
+    <section id="screens" class="screens">
+      <div class="container">
+        <h2>In action</h2>
+        <p class="muted">Drop your real screenshots here later. These slots maintain aspect ratios and look good in both light and dark mode.</p>
+        <div class="screen-grid">
+          <div class="screen-slot" aria-label="Screenshot slot"><span>Screenshot 1</span></div>
+          <div class="screen-slot"><span>Screenshot 2</span></div>
+          <div class="screen-slot"><span>Screenshot 3</span></div>
+          <div class="screen-slot"><span>Screenshot 4</span></div>
+          <div class="screen-slot"><span>Screenshot 5</span></div>
+          <div class="screen-slot"><span>Screenshot 6</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container contact-card">
+        <div>
+          <h2>Contact the developer</h2>
+          <p>Questions, feedback, or partnership ideas? I’d love to hear from you.</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:ryan@iFocusFlow.cc">ryan@iFocusFlow.cc</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="mailto:ryan@iFocusFlow.cc" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+          <button type="submit" class="btn primary">Send</button>
+          <p class="form-note">This uses your email client. For a hosted form, swap the <code>action</code> to a service like Formspree.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> iFocusFlow. All rights reserved.</p>
+      <a href="#" class="muted small">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
