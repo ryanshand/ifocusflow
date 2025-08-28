@@ -55,10 +55,18 @@ body{
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:32px 0;border-top:1px solid rgba(255,255,255,.06)}
 .feature.reverse{direction:rtl}
 .feature.reverse .feature-copy{direction:ltr}
+.feature-media {--shot-scale: 0.6;}
 .feature-media img{width:100%;height:auto}
 .feature-copy h2{margin:0 0 6px;font-size:clamp(24px, 3vw, 34px)}
 .feature-copy p{margin:0;color:var(--muted)}
+.feature-media img {
+  width: calc(100% * var(--shot-scale));   /* 30% of the slot’s width */
+  height: auto;                            /* keep aspect ratio */
+  display: block;
+  border-radius: 12px;                     /* optional: soften corners */
+}
 
+.screens { --shot-scale: 1.0; } 
 .screens{padding:40px 0 64px;border-top:1px solid rgba(255,255,255,.06)}
 .screens h2{margin:0 0 8px}
 .muted{color:var(--muted)}
@@ -66,6 +74,12 @@ body{
 .screen-slot{aspect-ratio:9/19;border-radius:16px;border:1px dashed rgba(255,255,255,.18);
   display:flex;align-items:center;justify-content:center;color:var(--muted);background:rgba(255,255,255,.03)}
 .screen-slot span{pointer-events:none}
+.screen-slot img {
+  width: calc(100% * var(--shot-scale));   /* 30% of the slot’s width */
+  height: auto;                            /* keep aspect ratio */
+  display: block;
+  border-radius: 12px;                     /* optional: soften corners */
+}
 
 .contact{padding:48px 0;border-top:1px solid rgba(255,255,255,.06)}
 .contact-card{display:grid;grid-template-columns:1fr 1fr;gap:28px;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));
